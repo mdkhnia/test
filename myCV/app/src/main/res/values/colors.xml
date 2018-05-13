@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="btn_bg">#ffffff</color>
+    <color name="btn_register_border">#dadada</color>
+    <color name="titleColor">#555555</color>
+    <color name="textColor">#818181</color>
+    <color name="hintColor">#b4b4b4</color>
+    <color name="loginText">#818181</color>
+    <color name="loginBtnText">#686161</color>
+    <color name="control_normal">#aa7ad6</color>
+    <color name="control_activated">#b293f6</color>
+    <color name="error_color">#c0ca33</color>
+    <color name="white">#FFFFFF</color>
 </resources>

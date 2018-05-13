@@ -16,6 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    repositories {
+        maven {
+            url 'https://dl.bintray.com/pegah-backtory/maven/'
+        }
+    }
 }
 
 dependencies {
@@ -35,4 +41,5 @@ dependencies {
     implementation 'com.github.clans:fab:1.6.4'
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.pegah.backtory:backtory-android-sdk:0.6.9'
 }

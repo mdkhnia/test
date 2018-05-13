@@ -5,6 +5,9 @@
     <gradient
         android:angle="0"
         android:startColor="#ededed"
-        android:centerColor="#bcbcbc"
+        android:centerColor="#d1d1d1"
         android:endColor="#ededed"/>
+    <corners android:radius="3dp" />
+    <stroke android:width="3px" android:color="@color/btn_register_border" />
+
 </shape>

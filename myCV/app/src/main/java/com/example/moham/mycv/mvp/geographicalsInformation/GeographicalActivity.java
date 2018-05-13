@@ -1,7 +1,6 @@
 package com.example.moham.mycv.mvp.geographicalsInformation;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,14 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.moham.mycv.BaseActivity;
-import com.example.moham.mycv.Models.webModels.YahooModel;
+import com.example.moham.mycv.Models.desiredWeatherOutcome;
 import com.example.moham.mycv.R;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GeographicalActivity extends BaseActivity implements GeographicalContract.View {
 

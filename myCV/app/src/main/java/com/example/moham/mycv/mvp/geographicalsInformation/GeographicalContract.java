@@ -1,5 +1,6 @@
 package com.example.moham.mycv.mvp.geographicalsInformation;
 
+import com.example.moham.mycv.Models.desiredWeatherOutcome;
 import com.example.moham.mycv.Models.webModels.YahooModel;
 
 public interface GeographicalContract {

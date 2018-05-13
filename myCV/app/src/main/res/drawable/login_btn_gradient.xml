@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--<solid android:color="@color/register_btn_bg"/>-->
+    <gradient
+        android:startColor="#283048"
+        android:centerColor="#3c5368"
+        android:endColor="#4e6168"
+        android:angle="0"/>
+    <corners android:radius="3dp" />
+    <stroke android:width="3px" android:color="@color/white" />
+</shape>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">myCV</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="headToRegister">Don\'t Have an Account Yet? Register</string>
 </resources>
