@@ -14,15 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".mvp.login.LoginActivity" />
+        <activity android:name=".mvp.register.RegisterActivity" />
+        <activity android:name=".mvp.geographicalsInformation.GeographicalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".mvp.login.LoginActivity" />
-        <activity android:name=".mvp.register.RegisterActivity" />
-        <activity android:name=".mvp.geographicalsInformation.GeographicalActivity" />
+            </intent-filter></activity>
         <activity android:name=".mvp.home.HomeActivity"></activity>
     </application>
 
