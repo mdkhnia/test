@@ -4,4 +4,10 @@
     <string name="password">Enter Password</string>
     <string name="login">Login</string>
     <string name="headToRegister">Don\'t Have an Account Yet? Register</string>
+    <string name="firstName">Plz Enter Your First Name</string>
+    <string name="lastName">Plz Enter Your Last Name</string>
+    <string name="confirmPass">Plz Enter Your Password Again</string>
+    <string name="phone">Phone(Ex): 0912-9997788</string>
+    <string name="email">Plz Enter Your Email</string>
+    <string name="regBtn">Register</string>
 </resources>

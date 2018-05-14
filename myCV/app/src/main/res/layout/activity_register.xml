@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".mvp.register.RegisterActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiFname"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/name"
+            android:hint="@string/firstName"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/control_normal"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiLname"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/name"
+            android:hint="@string/lastName"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/loginText"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiUsername"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/name"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/loginText"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiEmail"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/loginText"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiPhone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/phone"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/loginText"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiPass"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/pass"
+            android:hint="@string/password"
+            android:inputType="textVisiblePassword"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/loginText"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiCpass"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/loginText">
+
+        <EditText
+            android:id="@+id/cpass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/loginText"
+            android:drawableEnd="@drawable/pass"
+            android:hint="@string/confirmPass"
+            android:inputType="textVisiblePassword"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@color/loginText"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/regBtn"
+        android:background="@drawable/btn_bg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

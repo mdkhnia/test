@@ -1,6 +1,7 @@
 package com.example.moham.mycv.Models;
 
 
+import android.util.Log;
 import android.widget.Toast;
 
 import com.backtory.java.HttpStatusCode;
@@ -10,11 +11,21 @@ import com.backtory.java.internal.BacktoryResponse;
 import com.backtory.java.internal.BacktoryUser;
 import com.backtory.java.internal.KeyConfiguration;
 import com.example.moham.mycv.mvp.login.LoginContract;
+import com.example.moham.mycv.mvp.register.RegisterContract;
 
 public class UserModel {
     LoginContract.Presenter presenter;
+    RegisterContract.Presenter regPresenter;
+    String fname;
+    String lname;
+    String username;
+    String email;
+    String phone;
+    String pass;
 
-
+    public UserModel(RegisterContract.Presenter presenter){
+        this.regPresenter = presenter;
+    }
 
     public UserModel(LoginContract.Presenter presenter) {
         this.presenter = presenter;
@@ -41,5 +52,39 @@ public class UserModel {
                     }
 
                 });
+    }
+
+    public void CheckRegister(String fname, String lname, String username, String email, String phone, String pass, String cpass){
+        if(pass.equals(cpass)){ // pass = cpass
+            BacktoryUser newUser = new BacktoryUser.
+                    Builder().
+                    setFirstName(fname).
+                    setLastName(lname).
+                    setUsername(username).
+                    setEmail(email).
+                    setPassword(pass).
+                    setPhoneNumber(phone).
+                    setAvatar("mydomain.com/avatar.png").
+                    build();
+            // Register operation done (fail or success), handling it:
+            newUser.registerInBackground(new BacktoryCallBack<BacktoryUser>() {
+                @Override
+                public void onResponse(BacktoryResponse<BacktoryUser> backtoryResponse) {
+                    // Checking result of operation
+                    if (backtoryResponse.isSuccessful()) {
+                        // Successful
+                        regPresenter.CheckRegisterStatus(1);
+                    } else if (backtoryResponse.code() == HttpStatusCode.Conflict.code()) {
+                        // Username is invalid
+                        regPresenter.CheckRegisterStatus(2);
+                    } else {
+                        // General failure
+                        regPresenter.CheckRegisterStatus(3);
+                    }
+                }
+            });
+        } else{ // pass != cpass
+            regPresenter.CheckRegisterStatus(4);
+        }
     }
 }
