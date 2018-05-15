@@ -13,19 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".mvp.login.LoginActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".mvp.login.LoginActivity" />
+        <activity android:name=".mvp.register.RegisterActivity" />
+        <activity android:name=".mvp.geographicalsInformation.GeographicalActivity" />
+        <activity android:name=".mvp.home.HomeActivity" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvp.register.RegisterActivity" />
-        <activity android:name=".mvp.geographicalsInformation.GeographicalActivity"/>
-        <activity android:name=".mvp.home.HomeActivity"/>
     </application>
 
 </manifest>

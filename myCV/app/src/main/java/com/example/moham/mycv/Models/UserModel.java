@@ -1,6 +1,7 @@
 package com.example.moham.mycv.Models;
 
 
+import android.os.Build;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -10,10 +11,13 @@ import com.backtory.java.internal.BacktoryClient;
 import com.backtory.java.internal.BacktoryResponse;
 import com.backtory.java.internal.BacktoryUser;
 import com.backtory.java.internal.KeyConfiguration;
+import com.example.moham.mycv.BaseActivity;
 import com.example.moham.mycv.mvp.login.LoginContract;
 import com.example.moham.mycv.mvp.register.RegisterContract;
 
-public class UserModel {
+import java.util.Calendar;
+
+public class UserModel{
     LoginContract.Presenter presenter;
     RegisterContract.Presenter regPresenter;
     String fname;

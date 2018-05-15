@@ -12,6 +12,9 @@ import com.backtory.java.internal.BacktoryClient;
 import com.backtory.java.internal.KeyConfiguration;
 import com.example.moham.mycv.BaseActivity;
 import com.example.moham.mycv.R;
+import com.orhanobut.hawk.Hawk;
+
+import java.util.Calendar;
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener, RegisterContract.View {
 
@@ -127,6 +130,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         tiPhone.setErrorEnabled(false);
         tiPass.setErrorEnabled(false);
         tiCpass.setErrorEnabled(false);
+        Hawk.put("EnterTime", ((Calendar.getInstance().getTimeInMillis()) / 1000) + 60);
     }
 
     @Override

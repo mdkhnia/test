@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@drawable/bg_pic"
     tools:context=".mvp.login.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="225dp"
+        android:layout_centerHorizontal="true"
         android:orientation="vertical">
-
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputLoginUsername"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:textColorHint="@color/hintColor">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/username"
@@ -28,8 +29,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:backgroundTint="@color/hintColor"
-                android:drawableEnd="@drawable/login_phone"
+                android:backgroundTint="@color/background_tint"
+                android:drawableEnd="@drawable/username"
                 android:hint="@string/username"
                 android:inputType="text"
                 android:lines="1"
@@ -45,21 +46,21 @@
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColorHint="@color/hintColor">
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/hintColor"
-                android:drawableEnd="@drawable/login_pass"
+                android:drawableEnd="@drawable/pass"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:paddingEnd="10dp"
                 android:paddingStart="10dp"
                 android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:backgroundTint="@color/background_tint"/>
         </android.support.design.widget.TextInputLayout>
 
         <Button
@@ -71,20 +72,34 @@
             android:background="@drawable/btn_bg"
             android:text="@string/login"
             android:textAllCaps="false"
-            android:textColor="@color/loginBtnText"
+            android:textColor="@color/white"
             android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/btnHeadToRegister"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg"
-            android:text="@string/headToRegister"
-            android:textAllCaps="false"
-            android:textColor="@color/loginBtnText"
-            android:textSize="14sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:text="@string/beforeHeadToRegister"
+                android:textColor="@color/btn_register_border"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:id="@+id/btnHeadToRegister"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:text="@string/headToRegister"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

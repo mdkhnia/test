@@ -7,12 +7,28 @@
     <color name="btn_bg">#ffffff</color>
     <color name="btn_register_border">#dadada</color>
     <color name="titleColor">#555555</color>
-    <color name="textColor">#818181</color>
     <color name="hintColor">#818181</color>
     <color name="loginText">#107291</color>
     <color name="loginBtnText">#686161</color>
-    <color name="control_normal">#FF4081</color>
-    <color name="control_activated">#107291</color>
+    <color name="textColor">#034054</color>
+
+    <color name="control_normal">#107291</color>
+    <color name="control_activated">#66b7d0</color>
     <color name="error_color">#a71701</color>
+
     <color name="white">#FFFFFF</color>
+    <color name="transparent_white">#CCCCCC</color>
+
+    <color name="telegram_green">#50af53</color>
+    <color name="telegram_green_light">#65df69</color>
+
+    <color name="telegram_orange">#ff8d23</color>
+    <color name="telegram_orange_light">#ff993c</color>
+
+    <color name="telegram_red">#f94d5d</color>
+    <color name="telegram_red_light">#fa6b79</color>
+
+    <color name="telegram_blue">#3d6deb</color>
+    <color name="telegram_blue_light">#6696ff</color>
+    <color name="background_tint">#aa9b99</color>
 </resources>

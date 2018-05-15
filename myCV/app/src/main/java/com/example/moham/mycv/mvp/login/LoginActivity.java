@@ -15,6 +15,10 @@ import com.example.moham.mycv.BaseActivity;
 import com.example.moham.mycv.R;
 import com.example.moham.mycv.mvp.register.RegisterActivity;
 
+import com.orhanobut.hawk.Hawk;
+
+import java.util.Calendar;
+
 public class LoginActivity extends BaseActivity implements View.OnClickListener, LoginContract.View {
 
     TextInputLayout textInputLoginPassword, textInputLoginUsername;
@@ -68,10 +72,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             } else {
                 textInputLoginPassword.setErrorEnabled(false);
             }
-            if(isValid){
+            if (isValid) {
                 presenter.Checklogin(username.getText().toString(), password.getText().toString());
             }
-        } else if (v.getId() == R.id.btnHeadToRegister){
+        } else if (v.getId() == R.id.btnHeadToRegister) {
             Intent headtoRegister = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(headtoRegister);
         }
@@ -80,6 +84,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
     @Override
     public void onSuccess() {
         Toast.makeText(mContext, "Login Successful", Toast.LENGTH_SHORT).show();
+        Hawk.put("EnterTime", ((Calendar.getInstance().getTimeInMillis()) / 1000) + 60);
     }
 
     @Override
